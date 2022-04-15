@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gas Meter</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+      <title>Ethereum Gas Meter</title>
+      <link rel="stylesheet" href="style.css" />
+      <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+      <script src="main.js"></script>
+      
+      
+</head>
+
+<body>
+    <header>
+      <h1>Gas Meter</h1>
+      <nav>
+        <a href="/index.html">home</a>
+        <a href="" onclick="alert('More to come soon')">more</a>
+      </nav>
+    </header>
+    <main>
+      <div class="gas-price">
+        <p class="column-header">Gas gwei:</p>
+        <ul id="parent" style="text-align: center;">
+          <!-- This is where the current Gas Price in gWei goes -->
+        </ul>
+      </div>
+      <br>
+      <hr>
+      <br>
+      
+      <div class="eth-price">
+        <p class="column-header">gas eth:</p>
+        <ul id="parent-eth" style="text-align: center;">
+          <!-- This is where the current Gas Price in ETH goes -->
+        </ul>
+      </div>
+      <div id="lastPriceID">
+        <ul id="parent-trend">
+          <!-- This is where we show the % change in prices from 1 second ago -->
+        </ul>
+      </div>
+      <br>
+    <hr>
+    </main>
+    <br>
+    <input id="goal" type="number" placeholder="Choose preferred gwei Value"></input>
+    <br>
+    
+    <h3 id="goalSignal"></h3>
+    <button onclick="activate()">Activate Scout</button>
+    <br>
+    <div id="status"></div>
+    <button id="stopAlert" onclick="AlertStop()">Deactivate Scout</button>
+    <br>
+    <br>
+    <div class="nomics-ticker-widget" data-name="Ethereum" data-base="ETH" data-quote="USD"></div><script src="https://widget.nomics.com/embed.js"></script>
+    <div id="credits">
+      <i>Made with ♥️ by </i><b>MoPaRe</b><br><br><a href="https://twitter.com/intent/tweet?screen_name=notprajyoth&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @notprajyoth</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</body>
+</html>
