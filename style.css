@@ -1,0 +1,122 @@
+/* Box sizing rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #2E2E34;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+header {
+  grid-row: 1 / 2;
+  background: black;
+  color: white;
+  padding: 2vw;
+  text-align: center;
+}
+
+/*main {
+  grid-row: 2 / 3;
+  padding: 2vw;
+  margin: 2vw;
+}*/
+
+/*main:not([class]) {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}*/
+
+.gas-price {
+  background-color: hotpink;
+  font-family: monospace;
+  width: 60%;
+  padding: 5px;
+  margin: auto;
+  color: white;
+}
+
+.eth-price {
+  background-color: skyblue;
+  font-family: monospace;
+  width: 60%;
+  padding: 5px;
+  margin: auto;
+  color: white;
+}
+
+.usd-price {
+  background-color: green;
+}
+
+.trend {
+  background-color: gray;
+}
+
+.column-header {
+  text-align: center;
+  font-size: larger;
+  background-color: beige;
+}
+
+nav a {
+  margin: 0.3rem 1rem 0 0;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 0.4rem 0.4rem;
+  text-decoration: none;
+  line-height: 1.1;
+  color: black;
+}
+
+p{
+  color: #171717;
+  font-size: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input{
+  width: 90%;
+  height: 3em;
+  margin: auto;
+  border-radius: 2em;
+  padding: 3px;
+  font-family: monospace;
+  color: #00FFED;
+  text-align: center;
+  font-size: 1em;
+}
+
+button{
+  width: 60%;
+  height: 2.5em;
+  margin: auto;
+  border-radius: 2em;
+  background: #5B68FF;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 800;
+}
+
+#status{
+  font-size: 2em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+
+#credits{
+  margin: auto;
+  padding: 10px;
+  font-size: 1.2em;
+  font-family: monospace;
+  font-weight: 600;
+  text-align: center;
+  color: #D6D6D6;
+}
